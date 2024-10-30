@@ -4,93 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagen</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #555;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #4a90e2;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 1em;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 2em;
-            text-align: center;
-        }
-
-        figure {
-            margin: 2em 0;
-            text-align: center;
-        }
-
-        figcaption {
-            font-style: italic;
-            color: #777;
-        }
-
-        p {
-            text-align: justify;
-            margin: 1em 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleimg.css">
 </head>
 <body>
-
-    <!-- Cabecera con título -->
     <header>
-        <h1>Imagen</h1>
+        <h1>Actividades TEMA 2 - Parte 1</h1>
     </header>
-
-    <!-- Menú de navegación -->
     <nav>
-        <a href="index.html">Volver a Inicio</a>
+        <a href="./index.html">Inicio</a>
+        <a href="./imagen.html">Imagen</a>
+        <a href="./formulario.html">Formulario</a>
+        <a href="./blog.html.html">Blog</a>
+        <a href="./ayuda">Ayuda</a>
     </nav>
-
-    <!-- Cuerpo con imagen, texto y audio -->
     <main>
-        <!-- Texto previo a la imagen -->
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius urna id ligula sollicitudin cursus. 
         Integer vulputate erat at semper dapibus. Vestibulum fringilla felis sed sem facilisis, eget ornare mi cursus. 
         Vivamus viverra risus non lacus faucibus, a gravida nisi elementum. Donec in magna ut odio eleifend fermentum.</p>
 
-        <!-- Imagen usando <picture> con fuentes alternativas -->
-        <figure>
-            <picture>
-                <source media="(min-width: 650px)" srcset="high-res.jpg">
-                <source media="(min-width: 450px)" srcset="med-res.jpg">
-                <source src="low-res.jpg">
-                <img src="fallo.jpg" alt="Descripción de la imagen en caso de fallo de carga">
-            </picture>
-            <figcaption>Esta es una descripción de la imagen mostrada arriba.</figcaption>
-        </figure>
+        <picture>
+            <source media="(min-width: 650px)" srcset="imagen.jpg">
+            <source media="(min-width: 450px)" srcset="imagen.jpg">
+            <img src="imagen.jpg" alt="Imagen en caso de que no se soporte la etiqueta.">
+        </picture>
 
-        <!-- Texto posterior a la imagen -->
         <p>Curabitur a urna eget risus cursus lacinia non a est. Donec vehicula tellus a nisl volutpat, ac varius 
         nunc consequat. Nulla facilisi. Phasellus convallis lacus sed neque condimentum cursus. Fusce bibendum sapien
         eu sapien fermentum, a semper elit vehicula.</p>
 
-        <!-- Reproductor de audio -->
         <audio controls autoplay loop>
             <source src="audio.mp3" type="audio/mpeg">
             Tu navegador no soporta el elemento de audio.
