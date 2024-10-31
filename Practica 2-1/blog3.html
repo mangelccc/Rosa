@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog 3</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #video-container {
+            width: 700px;
+            height: 350px;
+            position: relative;
+        }
+        #video {
+            width: 100%;
+            height: 100%;
+        }
+        #controls button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Actividades TEMA 2 - Parte 1</h1>
+    </header>
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./imagen.html">Imagen</a>
+        <a href="./formulario.html">Formulario</a>
+        <a href="./blog3.html">Blog</a>
+        <a href="./ayuda">Ayuda</a>
+    </nav>
+    <h1>Video con Controles Personalizados</h1>
+    <div id="video-container">
+        <video id="video">
+            <source src="./videoplayback.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    
+    <div id="controls">
+        <button onclick="reiniciar()">Reiniciar</button>
+        <button onclick="retrasar()">Retrasar 5s</button>
+        <button onclick="adelantar()">Adelantar 5s</button>
+        <button onclick="toggleMute()" id="muteButton">Silenciar</button>
+        <button onclick="bajarVolumen()">Bajar Volumen</button>
+        <button onclick="subirVolumen()">Subir Volumen</button>
+    </div>
+
+    <script>
+        const video = document.getElementById('video');
+        const muteButton = document.getElementById('muteButton');
+
+        function reiniciar() {
+            video.currentTime = 0;
+            video.play();
+        }
+
+        function retrasar() {
+            video.currentTime = Math.max(0, video.currentTime - 5);
+        }
+
+        function adelantar() {
+            video.currentTime = Math.min(video.duration, video.currentTime + 5);
+        }
+
+        function toggleMute() {
+            video.muted = !video.muted;
+            muteButton.textContent = video.muted ? "Escuchar" : "Silenciar";
+        }
+
+        function bajarVolumen() {
+            video.volume = Math.max(0, video.volume - 0.1);
+        }
+
+        function subirVolumen() {
+            video.volume = Math.min(1, video.volume + 0.1);
+        }
+    </script>
+</body>
+</html>
