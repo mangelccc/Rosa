@@ -6,39 +6,32 @@
     <title>Actividades de Canvas</title>
 </head>
 <body>
-
-    <h2>Imagen 1: Arcos en posiciones distintas</h2>
+    <h2>Imagen 1:</h2>
     <canvas id="canvas1" width="200" height="200"></canvas>
 
-    <h2>Imagen 2: Cuadrados transparentes superpuestos</h2>
+    <h2>Imagen 2:</h2>
     <canvas id="canvas2" width="200" height="200"></canvas>
 
     <script>
-        // Dibujo de los arcos en diferentes posiciones
         const canvas1 = document.getElementById("canvas1");
         const ctx1 = canvas1.getContext("2d");
 
-        // Primer arco (arriba a la izquierda)
         ctx1.beginPath();
         ctx1.arc(50, 50, 30, Math.PI, 1.5 * Math.PI);
         ctx1.stroke();
 
-        // Segundo arco (arriba a la derecha)
         ctx1.beginPath();
         ctx1.arc(150, 50, 30, 1.5 * Math.PI, 0);
         ctx1.stroke();
 
-        // Tercer arco (abajo a la izquierda)
         ctx1.beginPath();
         ctx1.arc(50, 150, 30, 0.5 * Math.PI, Math.PI);
         ctx1.stroke();
 
-        // Cuarto arco (abajo a la derecha)
         ctx1.beginPath();
         ctx1.arc(150, 150, 30, 0, 0.5 * Math.PI);
         ctx1.stroke();
 
-        // Dibujo de los cuadrados transparentes superpuestos
         const canvas2 = document.getElementById("canvas2");
         const ctx2 = canvas2.getContext("2d");
 
@@ -51,7 +44,6 @@
         ];
         let offset = 0;
 
-        // Dibujar cinco cuadrados superpuestos con diferentes colores
         colors.forEach(color => {
             ctx2.beginPath();
             ctx2.rect(50 + offset, 50 + offset, 100, 100);
