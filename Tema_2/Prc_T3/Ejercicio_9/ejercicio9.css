@@ -1,0 +1,25 @@
+div.wrapper {
+    float: right;
+}
+
+div.grid {
+    color: white;
+    background: red;
+    padding: 5px;    
+}
+
+/* Parte A */
+#moveMe {
+    position: relative;
+    top: 10px;
+    left: 10px; 
+    background: blue;
+}
+
+/* Parte B:*/
+#moveMe {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    background: blue;
+}

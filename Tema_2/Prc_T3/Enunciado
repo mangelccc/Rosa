@@ -1,0 +1,32 @@
+14. Establece los selectores correspondientes a cada conjunto de reglas para crear el dibujo de la figura.
+
+
+
+9. Observa los recuadros que forman la pagina web. El <div> llamado wrapper está flotando a la
+derecha. ¿Qué ocurrirá si posicionamos de forma relativa el elemento con identificador moveMe?
+Mueve dicho elemento abajo y a la izquierda 5px partiendo de su posición inicial.
+
+a) Modifica el elemento con identificador moveMe de tal forma que se encuentre 10px por debajo
+del elemento que está en su parte superior y 10px a la derecha del elemento que está a su
+izquierda (en este caso, el borde de la página).
+
+b) El elemento se ha movido, pero ha quedado un hueco. ¿Por qué sucede esto? Realiza los ajustes
+necesarios en tu hoja de estilo para que la caja se mueva 10px hacia arriba en vez de 10px hacia
+abajo.
+
+
+
+5. Crea una serie de selectores de tal manera que, para la lista de tipo diccionario, todos aquellos elementos de tipo cita que no correspondan a la clase mi_clase tengan un fondo rojo claro
+(#FFCCCC) y todos aquellos elementos de tipo traducción del griego que no tengan el identificador
+mi_id tengan un fondo de color verde claro (#CCFFCC).
+
+
+
+6. A partir del código HTML proporcionado, añadir las reglas CSS necesarias para que la página
+resultante tenga el mismo aspecto que el de la imagen.
+
+
+
+5. Escribe el CSS correspondiente al documento .html proporcionado (hazlo en el mismo documento)
+para que quede tal y como aparece en la imagen adjunta. La alineación de cada uno de los
+elementos con respecto a los demás es importante de cara a la resolución de este ejercicio
